@@ -49,7 +49,7 @@
               <q-linear-progress
                 stripe
                size="30px"
-               :value="stat.base_stat / 255"
+               :value="stat.base_stat"
                class="progress-bar"
                color="red"
                gradient="primary"
