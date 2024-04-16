@@ -52,8 +52,7 @@
                :value="stat.base_stat"
                class="progress-bar"
                color="red"
-               gradient="primary"
-              />
+               gradient="primary"/>
             </span>
           </li>
         </ul>
