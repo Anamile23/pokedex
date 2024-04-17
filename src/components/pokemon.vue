@@ -44,15 +44,16 @@
             <span v-for="(stat, statIndex) in pokemon.stats.slice(groupIndex * 3, groupIndex * 3 + 3)" :key="statIndex">
               <div class="stat-info">
                 <span class="stat-name">{{ stat.stat.name.charAt(0).toUpperCase() + stat.stat.name.slice(1) }}:</span>
-                <span class="bar-progres">{{ stat.base_stat }}/255</span>
+                <span class="bar-progres">{{ stat.base_stat }} / 255</span>
               </div>
               <q-linear-progress
                 stripe
                size="30px"
-               :value="stat.base_stat"
+               :value="stat.base_stat / 255"
                class="progress-bar"
                color="red"
-               gradient="primary"/>
+               gradient="primary"
+              />
             </span>
           </li>
         </ul>
